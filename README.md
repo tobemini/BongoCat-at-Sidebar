@@ -21,6 +21,10 @@ Initial release of Bongo Cat Sidebar
 
 Change git repository
 
+### 0.0.3
+
+Change README.md
+
 -----------------------------------------------------------------------------------------------------------
 
 **Enjoy!**
