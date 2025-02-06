@@ -17,6 +17,9 @@ Run the command `Bongo Cat Activate` to create bongo cat!
 
 Initial release of Bongo Cat Sidebar
 
+### 0.0.2
+
+Change git repository
 -----------------------------------------------------------------------------------------------------------
 
 **Enjoy!**

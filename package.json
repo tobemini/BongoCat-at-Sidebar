@@ -6,9 +6,9 @@
   "publisher": "Milynn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobemini/bongocat-sidebar"
+    "url": "https://github.com/tobemini/BongoCat-at-Sidebar"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.96.0"
   },
