@@ -67,7 +67,7 @@ class BongoCatViewProvider implements vscode.WebviewViewProvider {
 		  <title>Bongo Cat</title>
 		  <style>
 			  body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
-			  img { max-width: 100%; max-height: 100%; }
+			  img { max-width: 100%; max-height: 100%; object-fit: contain }
 		  </style>
 	  </head>
 	  <body>
