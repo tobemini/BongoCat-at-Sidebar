@@ -25,6 +25,10 @@ Change git repository
 
 Change README.md
 
+### 0.0.4
+
+Make bongo cat not stretch (credit : bgalvao 🤞✌️)
+
 -----------------------------------------------------------------------------------------------------------
 
 **Enjoy!**
