@@ -57,7 +57,7 @@ function activate(context) {
         provider.updateWebview();
         vscode.commands.executeCommand('bongoCatView.focus');
     }));
-    // 👉 ดักพิมพ์
+    // 👉 Listen to any document typing to trigger bongo cat animation
     context.subscriptions.push(vscode.workspace.onDidChangeTextDocument(() => {
         provider.triggerBongoAnimation();
     }));
@@ -105,51 +105,51 @@ class BongoCatViewProvider {
     }
     getWebviewContent(bongoLeftUri, bongoRightUri, bongoMiddleUri) {
         return `
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>Bongo Cat</title>
-	  <style>
-		body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #1e1e1e; }
-		img { max-width: 100%; max-height: 100%; object-fit: contain }
-	  </style>
-	</head>
-	<body>
-	  <img id="bongo-middle" src="${bongoMiddleUri}" width="100%" />
-	  <img id="bongo-left" src="${bongoLeftUri}" width="100%" hidden />
-	  <img id="bongo-right" src="${bongoRightUri}" width="100%" hidden />
-	
-	  <script>
-		const bongoLeft = document.getElementById('bongo-left');
-		const bongoRight = document.getElementById('bongo-right');
-		const bongoMiddle = document.getElementById('bongo-middle');
-		let timeout;
-	
-		window.addEventListener('message', event => {
-		  const message = event.data;
-		  clearTimeout(timeout);
-	
-		  if (message === 'left') {
-			bongoMiddle.hidden = true;
-			bongoLeft.hidden = false;
-			bongoRight.hidden = true;
-		  } else {
-			bongoMiddle.hidden = true;
-			bongoLeft.hidden = true;
-			bongoRight.hidden = false;
-		  }
-	
-		  timeout = setTimeout(() => {
-			bongoLeft.hidden = true;
-			bongoRight.hidden = true;
-			bongoMiddle.hidden = false;
-		  }, 200);
-		});
-	  </script>
-	</body>
-	</html>`;
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bongo Cat</title>
+      <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #1e1e1e; }
+        img { max-width: 100%; max-height: 100%; object-fit: contain }
+      </style>
+    </head>
+    <body>
+      <img id="bongo-middle" src="${bongoMiddleUri}" width="100%" />
+      <img id="bongo-left" src="${bongoLeftUri}" width="100%" hidden />
+      <img id="bongo-right" src="${bongoRightUri}" width="100%" hidden />
+    
+      <script>
+        const bongoLeft = document.getElementById('bongo-left');
+        const bongoRight = document.getElementById('bongo-right');
+        const bongoMiddle = document.getElementById('bongo-middle');
+        let timeout;
+    
+        window.addEventListener('message', event => {
+          const message = event.data;
+          clearTimeout(timeout);
+    
+          if (message === 'left') {
+            bongoMiddle.hidden = true;
+            bongoLeft.hidden = false;
+            bongoRight.hidden = true;
+          } else {
+            bongoMiddle.hidden = true;
+            bongoLeft.hidden = true;
+            bongoRight.hidden = false;
+          }
+    
+          timeout = setTimeout(() => {
+            bongoLeft.hidden = true;
+            bongoRight.hidden = true;
+            bongoMiddle.hidden = false;
+          }, 200);
+        });
+      </script>
+    </body>
+    </html>`;
     }
     *getBongoState() {
         let BongoState;
@@ -164,4 +164,4 @@ class BongoCatViewProvider {
         }
     }
 }
-//# sourceMappingURL=extension.js.map
+//# sourceMappingURL=Untitled-1.js.map

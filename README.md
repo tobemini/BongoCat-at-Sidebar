@@ -29,6 +29,9 @@ Change README.md
 
 Make bongo cat not stretch (credit : bgalvao 🤞✌️)
 
+### 0.1.0
+
+Add select cat feature!! [Original,Siamese]
 -----------------------------------------------------------------------------------------------------------
 
 **Enjoy!**
