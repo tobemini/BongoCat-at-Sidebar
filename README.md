@@ -1,39 +1,87 @@
-# Bongo Cat Sidebar
+# BongoCat Sidebar
 
-🐱 Creates a bongo cat to type along with you at sidebar 🐱
+🐾 A playful **Bongo Cat companion** that appears in your VS Code sidebar and taps along while you work.
 
-## Original Extension
+This extension adds a small animated cat to your sidebar, giving your editor a bit more personality while you code.
 
-This extension is inspired by and forked from https://github.com/JohnnyRacket/bongocat-vscode-ext.
-If you encounter any issues, errors, or anything else, feel free to let me know.
+---
 
-## Use
+## Features
 
-Run the command `Bongo Cat Activate` to create bongo cat!
+* 🎹 **Typing Animation**
+  The cat reacts while you type, creating a fun interactive coding companion.
 
-![Bongo Cat Use GIF](./media/bongo_cat_usage.gif?raw=true)
+* 🐱 **Multiple Cat Styles**
+  Choose between different cat appearances.
 
-### 0.0.1
+* 🧩 **Lightweight Sidebar Panel**
+  Runs inside the VS Code sidebar without affecting your workflow.
 
-Initial release of Bongo Cat Sidebar
+---
 
-### 0.0.2
+## Getting Started
 
-Change git repository
+1. Install the extension from the marketplace.
+2. Open the Command Palette.
 
-### 0.0.3
+```
+Ctrl + Shift + P
+```
 
-Change README.md
+3. Run the command:
 
-### 0.0.4
+```
+Bongo Cat: Activate
+```
 
-Make bongo cat not stretch (credit : bgalvao 🤞✌️)
+The Bongo Cat panel will appear in your sidebar.
+
+---
+
+## Cat Styles
+
+You can choose between available cat variations:
+
+* Original
+* Siamese
+
+More styles may be added in future updates.
+
+---
+
+## Inspiration
+
+This project was inspired by the popular Bongo Cat concept and other community projects that bring fun interactive elements into coding environments.
+
+This implementation focuses on providing a simple and lightweight sidebar companion for Visual Studio Code.
+
+---
+
+## Changelog
 
 ### 0.1.1
 
-Add select cat feature!!
-    -Original
-    -Siamese
------------------------------------------------------------------------------------------------------------
+* Added cat style selection feature
 
-**Enjoy!**
+  * Original
+  * Siamese
+
+### 0.0.4
+
+* Adjusted animation behavior so the cat keeps its proper proportions
+
+### 0.0.3
+
+* Updated documentation
+
+### 0.0.2
+
+* Updated repository reference
+
+### 0.0.1
+
+* Initial release
+
+---
+
+Enjoy coding with your new Bongo Cat companion! 🐱

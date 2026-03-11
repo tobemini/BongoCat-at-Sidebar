@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
 	vscode.commands.registerCommand('bongocat-sidebar.bongoCat', async () => {
-	  const catSpeciesList: string[] = ['original', 'siamese'];
+	  const catSpeciesList: string[] = ['original', 'siamese','black','pegg'];
 	  let getSpecie: string | undefined = await vscode.window.showQuickPick(catSpeciesList, {
 		placeHolder: 'Select a cat 🐱 !!'
 	  });
